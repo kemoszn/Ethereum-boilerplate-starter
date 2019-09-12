@@ -18,7 +18,7 @@ contract Savings {
         amount = newAmount;
     }
 
-    function Withdraw() public  mustBeOwner {
+    function Withdraw() public mustBeOwner {
         owner.transfer(amount);
     }
 
